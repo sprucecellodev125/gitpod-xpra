@@ -1,0 +1,8 @@
+image: 
+  file: fulldesktop.Dockerfile
+
+ports:
+  - port: 2000
+
+tasks:
+  - command: xpra start-desktop --bind-tcp=0.0.0.0:2000 --resize-display=true --html=on --start=xfce4-session
